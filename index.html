@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Noah Gardyjas</title>
+        <link rel="shortcut icon" href="netflix.png">
+        <script Language="Javascript">
+            function PageRand()
+            {
+            url = [
+            "H2O.html",
+            "amonium.html",
+            "ammonium.html",
+            "sulfate.html",
+            "nitrate.html"
+            ];
+			choice = Math.floor(Math.random() * url.length);
+            document.location.href=(url[choice]);
+            }
+        </script>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Noah Gardyjas</h1>
+        <a href="carbone.html">Atomistique</a>
+        <br>
+        <a href="thermochimie.html">thermochimie</a>
+        <br>
+        <a href="solutions.html">chimie des solutions</a>
+        <h3 style="text-align: center;">Atomistique</h3>
+        <p>donnez la formule de lewis et le VSEPR du dioxyde de carbone:</p>
+	<button onclick="document.getElementById('correction').hidden=false">correction</button>
+	<div id="correction" hidden>
+		<img src="carbone2.png" height="150" alt="carbone">		
+        <br>
+        <button onclick="document.getElementById('explication').hidden=false">explication</button>
+        <a href="https://www.youtube.com/watch?v=aguIFXGnU5s"><button>vidéo explicative</button></a>
+	<div id="explication" hidden>
+		<h3>LEWIS:</h3>
+        <img src="carbonee.png" height="500" alt="carbone explication">
+        <h3>VSEPR:</h3>
+        <img src="carboneA.png" height="500" alt="carbone explication">
+
+	</div>	
+	</div>
+        <a href="#" onClick="PageRand(); return(false);"><button>nouvel exercice</button></a>
+    </body>
+</html>
