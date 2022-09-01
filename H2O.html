@@ -8,11 +8,12 @@
             function PageRand()
             {
             url = [
-            "carbone.html",
+            "index.html",
             "amonium.html",
             "ammonium.html",
             "sulfate.html",
-            "nitrate.html"
+            "nitrate.html",
+                "trichlorure de phosphore.html"
             ];
 			choice = Math.floor(Math.random() * url.length);
             document.location.href=(url[choice]);
@@ -21,7 +22,7 @@
     </head>
     <body>
         <h1 style="text-align: center;">Noah Gardyjas</h1>
-        <a href="carbone.html">Atomistique</a>
+        <a href="index.html">Atomistique</a>
         <br>
         <a href="thermochimie.html">thermochimie</a>
         <br>
@@ -30,8 +31,17 @@
         <p>donnez la formule de lewis et le VSEPR de l'eau:</p>
 	<button onclick="document.getElementById('correction').hidden=false">correction</button>
 	<div id="correction" hidden>
-		<img src="H20.png" height="150" alt="eau">		
+		<img src="H20.png" height="150" alt="eau">	
+        <br>
+        <button onclick="document.getElementById('explication').hidden=false">explication</button>
+        <button>vidéo explicative</button></a>
+	<div id="explication" hidden>
+		<h3>LEWIS:</h3>
+        <img src="H2Oe.png" height="700" alt="eau explication">
+        <h3>VSEPR:</h3>
+        <img src="H2OA.png" height="500" alt="eau explication">	
 	</div>
+    </div>
         <a href="#" onClick="PageRand(); return(false);"><button>nouvel exercice</button></a>
     </body>
 </html>

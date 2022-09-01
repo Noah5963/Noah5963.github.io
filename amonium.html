@@ -8,11 +8,12 @@
             function PageRand()
             {
             url = [
-            "carbone.html",
+            "index.html",
             	"H2O.html",
                 "ammonium.html",
                 "sulfate.html",
-                "nitrate.html"
+                "nitrate.html",
+                "trichlorure de phosphore.html"
             ];
 			choice = Math.floor(Math.random() * url.length);
             document.location.href=(url[choice]);
@@ -21,16 +22,31 @@
     </head>
     <body>
         <h1 style="text-align: center;">Noah Gardyjas</h1>
-        <a href="carbone.html">Atomistique</a>
+        <a href="index.html">Atomistique</a>
         <br>
         <a href="thermochimie.html">thermochimie</a>
         <br>
         <a href="solutions.html">chimie des solutions</a>
         <h3 style="text-align: center;">Atomistique</h3>
-        <p>donnez la formule de lewis et le VSEPR de l'ammoniac:</p>
+        <p>donnez la formule de lewis et le VSEPR de l'ammoniac (NH3):</p>
 	<button onclick="document.getElementById('correction').hidden=false">correction</button>
 	<div id="correction" hidden>
-		<img src="amonium2.png" height="150" alt="amonium">		
+		<img src="ammoniacM.png" height="170" alt="ammoniac">		
+        <br>
+        <button onclick="document.getElementById('explication').hidden=false">explication</button>
+        <a href="https://www.youtube.com/watch?v=G9_n6-r1QEY"><button>vidéo explicative</button></a>
+	<div id="explication" hidden>
+		<h3>LEWIS:</h3>
+        <img src="ammoniac1.png" height="500" alt="ammoniac explication">
+        <img src="ammoniac2.png" height="200" alt="ammoniac explication">
+        <img src="ammoniac3.png" height="350" alt="ammoniac explication">
+        <h3>VSEPR:</h3>
+        <img src="ammoniac4.png" height="200" alt="ammoniac explication">
+        <img src="ammoniac5.png" height="500" alt="ammoniac explication">
+        
+    
+
+	</div>		
 	</div>
         <a href="#" onClick="PageRand(); return(false);"><button>nouvel exercice</button></a>
     </body>
